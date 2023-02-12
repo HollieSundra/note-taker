@@ -5,7 +5,7 @@ const apiRouter = require('./routes/apiRouter');
 const frontRouter = require('./routes/frontRouter');
 
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 
 // parse incoming json
 app.use(express.json());
